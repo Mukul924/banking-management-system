@@ -14,8 +14,8 @@ public class DBConnection
             con = DriverManager.getConnection
             (
                 "jdbc:oracle:thin:@localhost:1521:xe",
-                "YOUR_DB_USERNAME",
-                "YOUR_DB_PASSWORD"
+                "system",
+                "system"
             );
         }
 
