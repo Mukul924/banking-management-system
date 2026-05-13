@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Banking System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 35px;
+      border-radius: 15px;
+      width: 400px;
+      backdrop-filter: blur(10px);
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 12px;
+    }
+
+    label {
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #22c55e;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #16a34a;
+    }
+
+    .extra {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .extra a {
+      color: #facc15;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Create Account</h2>
+
+    <form action="signup" method="post">
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter your name">
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email">
+      </div>
+
+      <div class="input-group">
+        <label>Mobile Number</label>
+        <input type="text" name="contact" placeholder="Enter mobile number">
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" name="pass" placeholder="Create password">
+      </div>
+
+      <div class="input-group">
+        <label>Confirm Password</label>
+        <input type="password" name="Cpass" placeholder="Confirm password">
+      </div>
+
+      <button class="btn">Register</button>
+    </form>
+
+    <div class="extra">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>
